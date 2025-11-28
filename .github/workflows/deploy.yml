@@ -3,7 +3,7 @@ name: Deploy Hugo to GitHub Pages
 on:
   push:
     branches:
-      - master  # 存放源码的分支
+      - main  # 存放源码的分支
 
 jobs:
   deploy:
