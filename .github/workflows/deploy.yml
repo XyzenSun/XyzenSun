@@ -1,0 +1,35 @@
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # 存放源码的分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write  # 允许 Action 修改仓库内容
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # 自动拉取子模块
+          fetch-depth: 0    # 拉取完整历史
+
+      - name: 安装 Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.152.2" 
+          extended: true
+
+      - name: 生成静态文件
+        run: hugo --minify --cleanDestinationDir
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public  
+          publish_branch: gh-pages  # 将构建后的页面推送到此分支

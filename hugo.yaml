@@ -1,0 +1,51 @@
+baseURL: "https://xyzen.de/"
+languageCode: "en-us"
+title: "Xyzen"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+# 优化生成的 HTML
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# PaperMod 配置
+params:
+  env: production
+  title: "Xyzen"
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio]
+  author: Me
+  # 默认主题颜色
+  defaultTheme: auto
+  # 禁用主题切换
+  disableThemeToggle: false
+
+  # 首页配置
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: "Welcome to my site"
+
+  # 社交图标 (可选)
+  socialIcons:
+    - name: github
+      url: "https://github.com/XyzenSun/"
+
+# 菜单配置
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example
+      url: /example/
+      weight: 30
