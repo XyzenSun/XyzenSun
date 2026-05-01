@@ -1,4 +1,4 @@
-baseURL: "https://xyzen.de/"
+baseURL: "https://xyzen.pages.dev/"
 languageCode: "en-us"
 title: "Xyzen"
 theme: "PaperMod"
@@ -16,7 +16,7 @@ minify:
 params:
   env: production
   title: "Xyzen"
-  description: "ExampleSite description"
+  description: an ordinary person"
   keywords: [Blog, Portfolio]
   author: Me
   # 默认主题颜色
