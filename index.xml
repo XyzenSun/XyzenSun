@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Xyzen</title>
-    <link>https://xyzen.de/</link>
+    <link>https://xyzen.pages.dev/</link>
     <description>Recent content on Xyzen</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Nov 2025 03:07:22 +0000</lastBuildDate>
-    <atom:link href="https://xyzen.de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xyzen.pages.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HE Tunnel添加IPV6踩坑记</title>
-      <link>https://xyzen.de/posts/add-ipv6-by-he/</link>
+      <link>https://xyzen.pages.dev/posts/add-ipv6-by-he/</link>
       <pubDate>Fri, 28 Nov 2025 03:07:22 +0000</pubDate>
-      <guid>https://xyzen.de/posts/add-ipv6-by-he/</guid>
+      <guid>https://xyzen.pages.dev/posts/add-ipv6-by-he/</guid>
       <description>&lt;p&gt;因为我的服务器没有ipv6，之前用过warp添加v6出口，本质上就是给服务器套了个代理，但我想要v6入口，昨天晚上听说 tunnelbroker 添加的v6 in v4 tunnel是公网出入ipv6，今天起来立马折腾了一下，参考了教程&lt;a href=&#34;https://appscross.com/blog/how-to-configure-he-ipv6-tunnel.html&#34;&gt;HE tunnelbroker添加ipv6&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;我的服务器环境&#34;&gt;我的服务器环境&lt;/h3&gt;
 &lt;ul&gt;
